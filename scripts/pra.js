@@ -74,21 +74,21 @@ const show = (idx) => {
 const showImg = (idx)=>{
     if (num[idx - 1]) {                                         // 1이면 폭탄사진
        
-        let tag = `<img src="./pj3/images/boom.png">`
+        let tag = `<img src="./images/boom.png">`
         document.getElementById(`box${idx}`).innerHTML = tag;
         shuffleFlag = false;
         console.log(alert("폭탄입니다 꽝"))
         gameSet();
         
     } else {
-        let tag = `<img src="./pj3/images/hart.png">`            // 1이 아니면 하트사진
+        let tag = `<img src="./images/hart.png">`            // 1이 아니면 하트사진
         document.getElementById(`box${idx}`).innerHTML = tag;
         cnt += 1
     }
 
     if (selNum.length== 8) {
         for (let i = 1; i <= 9; i++) {                          // 하트사진이 8개면 
-            let tag = `<img src="./pj3/images/hart.png">`
+            let tag = `<img src="./images/hart.png">`
             document.getElementById(`box${i}`).innerHTML = tag;
             shuffleFlag = false;
         }
